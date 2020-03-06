@@ -33,11 +33,13 @@ a:link {
   box-sizing: border-box;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
+	
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+	
 [class*="col-"] {
   float: left;
   padding: 15px;
@@ -45,22 +47,24 @@ a:link {
 
 .topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: white;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
+	
 .topnav a:hover {
-  background-color: #FFFFFF;
-  color: black;
+  background-color: black;
+  color: white;
 }
+	
 .topnav a.active {
   background-color: #b35c48;
   color: black;
@@ -68,6 +72,7 @@ a:link {
 .topnav .icon {
   display: none;
 }
+	
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -123,13 +128,12 @@ a:link {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
-  
-  
 </style>
 </head>
+
 <body>
   
-  <div class="topnav" id="myTopnav">
+<div class="topnav" id="myTopnav">
   <a href="">Myroslav Pidkuyko</a>
   <a href="index.html" class="active">Home</a>
   <a href="research.html">Research</a>
@@ -142,8 +146,10 @@ a:link {
     <i class="fa fa-bars"></i>
   </a>
 </div>
-  
-  <h1 style="text-align:center;color:#b35c48">Home</h1>
+
+<div class="gap-20"></div>
+	
+<h1 style="text-align:center;color:#b35c48">Home</h1>
  
 <div class="gap-20"></div>
   
