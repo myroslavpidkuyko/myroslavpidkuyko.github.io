@@ -1,45 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <title>Myroslav Pidkuyko</title>
-  <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Myroslav Pidkuyko</title>
+<link rel="icon" href="bde_logo_small.jpg">
+<style>
 body {
   margin: 0;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
+  
+a:link {
+  color: #b35c48;
+}
+ 
+.gap-10 {
+		width:100%;
+		height:10px;
+	}
+.gap-20 {
+		width:100%;
+		height:20px;
+	}
+  
+.gap-30 {
+		width:100%;
+		height:30px;
+	}
+  
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+	
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+	
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
 
 .topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: white;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
-
+	
 .topnav a:hover {
-  background-color: #FFFFFF;
-  color: black;
+  background-color: black;
+  color: white;
 }
-
+	
 .topnav a.active {
   background-color: #b35c48;
   color: black;
 }
 
+.topnav a.nonactive {
+  background-color: white;
+  color: black;
+}
+	
+.topnav .logo { 
+	position: absolute; 
+	z-index:1; 
+	top:0; 
+}
+	
 .topnav .icon {
   display: none;
 }
-
+	
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -47,7 +93,6 @@ body {
     display: block;
   }
 }
-
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
@@ -61,30 +106,70 @@ body {
     text-align: left;
   }
 }
+    
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
 </style>
 </head>
+
 <body>
   
-  <div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
+<div class="topnav" id="myTopnav">
+  <!-- <a href="" class="nonactive"><img src="Logo_Banco_de_España.jpg" style="height:45px; width=auto;" align="middle">Myroslav Pidkuyko</a> -->
+  <a href="" class="nonactive">Myroslav Pidkuyko</a>
+  <a href="index.html">Home</a>
   <a href="research.html" class="active">Research</a>
   <a href="cv.html">CV</a>
   <a href="teaching.html">Teaching</a>
   <a href="codes.html">Codes</a>
   <a href="contact.html">Contact</a>
-  <a href="links.html">Links</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-  
-  <h1 style="text-align:center;color:#b35c48">Research</h1>
-  
-  
 
+<div class="gap-20"></div>
+	
+<h1 style="text-align:center;color:#b35c48">Research</h1>
+ 
+<div class="gap-20"></div>
+  
+ 
                                                                                      
                                                                                      
-     <script>
+<script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
