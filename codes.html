@@ -152,16 +152,28 @@ a:link {
 	
 	
 .button {
-  background-color: #b35c48;
+  background-color: #b35c48; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  transition-duration: 0.4s;
   cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #b35c48;
+}
+
+.button1:hover {
+  background-color: #b35c48;
+  color: white;
 }
 	
 	
@@ -190,7 +202,7 @@ a:link {
  
 <div class="gap-20"></div>
 	
-<button class="button" onclick="myFunction2()">CEX Stata Codes</button>
+<button class="button button1" onclick="myFunction2()">CEX Stata Codes</button>
 
 <div id="myDIV" style="display:none">
 These Stata files (dictionaries) were created to make access to the 1980 - 1995 waves of BLS Consumer Expenditure Survey data more straightforward and easy. 
