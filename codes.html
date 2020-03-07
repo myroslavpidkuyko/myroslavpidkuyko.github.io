@@ -145,7 +145,15 @@ a:link {
 #myDIV {
   width: 100%;
   padding: 10px 0;
-  text-align: center;
+  text-align: left;
+  background-color: white;
+  margin-top: 20px;
+}
+
+#myDIV2 {
+  width: 100%;
+  padding: 10px 0;
+  text-align: left;
   background-color: white;
   margin-top: 20px;
 }
@@ -220,7 +228,7 @@ Available at <a href="https://github.com/myroslavpidkuyko/cex-dictionary.git">ht
   
 <div class="gap-20"></div>
 
-<button class="button disabled" onclick="myFunction2()">SCF Stata Codes</button>
+<button class="button disabled" onclick="myFunction3()">SCF Stata Codes</button>
 
  
                                                                                      
@@ -239,6 +247,17 @@ function myFunction() {
 <script>
 function myFunction2() {
   var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>	
+                                                                                     
+<script>
+function myFunction3() {
+  var x = document.getElementById("myDIV2");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
