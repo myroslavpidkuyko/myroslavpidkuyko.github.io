@@ -141,6 +141,14 @@ a:link {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
+	
+#myDIV {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+}
 </style>
 </head>
 
@@ -166,7 +174,11 @@ a:link {
  
 <div class="gap-20"></div>
   
+<p onclick="myFunction()">Try it</p>
 
+<div id="myDIV">
+This is my DIV element.
+</div>
   
   
  
@@ -181,7 +193,18 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-</script>                                                                                
+</script>     
+	
+<script>
+function myFunction2() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>	
                                                                                      
 </body>
 </html>
